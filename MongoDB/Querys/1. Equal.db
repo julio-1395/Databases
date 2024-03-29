@@ -1,0 +1,6 @@
+#Find documents where the "status" field equals
+db.collection.find({"status": {"$eq": "active"}})
+
+#Find documents where the "status" field is not equal to "inactive"
+db.collection.find({"status": {"$ne": "inactive"}})
+

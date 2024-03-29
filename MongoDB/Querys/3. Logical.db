@@ -1,0 +1,8 @@
+# Find documents where the "city" field is either "New York" or "London"
+db.collection.find({"city": {"$in": ["New York", "London"]}})
+
+# Find documents where the "age" field is greater than 25 and the "city" field is "Paris"
+db.collection.find({"$and": [{"age": {"$gt": 25}}, {"city": "Paris"}]})
+
+# Find documents where the "status" field is either "active" or "pending"
+db.collection.find({"$or": [{"status": "active"}, {"status": "pending"}]})
