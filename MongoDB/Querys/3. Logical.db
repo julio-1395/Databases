@@ -6,3 +6,10 @@ db.collection.find({"$and": [{"age": {"$gt": 25}}, {"city": "Paris"}]})
 
 # Find documents where the "status" field is either "active" or "pending"
 db.collection.find({"$or": [{"status": "active"}, {"status": "pending"}]})
+
+# Example complex
+db.collection.find({
+    "city": {"$in": ["London", "Paris"]},
+    "date": {"$gte": ISODate("2012-04-07"), "$lte": ISODate("2014-04-12")},
+    "salary": {"$gt": 3400}
+})
