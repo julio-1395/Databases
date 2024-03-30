@@ -205,8 +205,8 @@ GROUP BY name;
 # DESCRIPTION: Find all flights where the pilot is also a passenger.
 # QUERY:
 
-SELECT * FROM flights 
-WHERE departure_airport = 'Airport_Name' 
-AND departure_time BETWEEN 'start_date' AND 'end_date';
+SELECT * 
+FROM flights 
+WHERE pilot_id IN (SELECT passenger_id FROM passengers);
 
 ---------------------------------------------------------------------------------------------------
