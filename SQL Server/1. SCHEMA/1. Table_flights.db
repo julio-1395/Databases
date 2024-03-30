@@ -1,0 +1,15 @@
+CREATE TABLE flights (
+    flight_id INT PRIMARY KEY,
+    flight_number VARCHAR(10),
+    departure_airport VARCHAR(50),
+    arrival_airport VARCHAR(50),
+    departure_time DATETIME,
+    arrival_time DATETIME,
+    aircraft_id INT,
+    pilot_id INT,
+    copilot_id INT,
+    -- Add more columns as needed
+    -- ...
+);
+
+

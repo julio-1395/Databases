@@ -1,0 +1,8 @@
+# 1º EXERCISES:
+# DESCRIPTION:Retrieve all flights departing from a specific airport within a given date range.
+# QUERY:
+
+SELECT * FROM flights 
+WHERE departure_airport = 'Airport_Name' 
+AND departure_time BETWEEN 'start_date' AND 'end_date';
+
