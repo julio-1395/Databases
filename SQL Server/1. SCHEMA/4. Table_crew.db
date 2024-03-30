@@ -1,8 +1,0 @@
-CREATE TABLE crew (
-    crew_id INT PRIMARY KEY,
-    name VARCHAR(100),
-    position VARCHAR(50),
-    flight_id INT,
-    -- Add more columns as needed
-    -- ...
-);
