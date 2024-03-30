@@ -1,0 +1,4 @@
+# This stage sorts documents based on specified fields.
+db.collection.aggregate([
+  { $sort: { field: 1 } }
+]);

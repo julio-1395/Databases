@@ -1,0 +1,5 @@
+# This stage deconstructs an array field from the input documents to output a document for each element.
+db.collection.aggregate([
+  { $unwind: "$arrayField" }
+]);
+

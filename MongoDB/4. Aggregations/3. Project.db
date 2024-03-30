@@ -1,0 +1,5 @@
+# This stage reshapes documents, including adding new fields, removing fields, or including computed fields.
+db.collection.aggregate([
+  { $project: { newField: 1, existingField: 1, _id: 0 } }
+]);
+

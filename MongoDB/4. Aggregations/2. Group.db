@@ -1,0 +1,5 @@
+# This stage groups documents by a specified expression and applies accumulator expressions.
+db.collection.aggregate([
+  { $group: { _id: "$field", total: { $sum: "$value" } } }
+]);
+

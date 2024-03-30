@@ -1,0 +1,4 @@
+# This stage filters documents based on specified criteria.
+db.collection.aggregate([
+  { $match: { field: value } }
+]);
